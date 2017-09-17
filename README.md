@@ -9,16 +9,7 @@ This library was inspired by the official [GithubBrowserSample][GithubBrowserSam
 
 ## Installation
 
-Add the following lines to the build.gradle of your app module to add the repository (pending
-request for jCenter repository):
-
-    repositories {
-        maven {
-            url  "https://dl.bintray.com/alexfacciorusso/DaggerViewModel" 
-        }
-    }
-    
-and one of the following lines depending to your Gradle Android plugin version in your
+Add one of the following lines depending to your Gradle Android plugin version in your
 `dependencies` section:
 
     // For plugin version < 3.x
