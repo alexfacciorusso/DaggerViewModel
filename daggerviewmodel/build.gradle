@@ -15,7 +15,7 @@ ext {
     siteUrl = 'https://github.com/alexfacciorusso/DaggerViewModel'
     gitUrl = 'https://github.com/alexfacciorusso/DaggerViewModel.git'
 
-    libraryVersion = '0.1.1'
+    libraryVersion = '0.1.2'
 
     developerId = 'alexfacciorusso'
     developerName = 'Alex Facciorusso'
@@ -31,9 +31,9 @@ android {
     buildToolsVersion "26.0.1"
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 14
         targetSdkVersion 26
-        versionCode 1
+        versionCode 3
         versionName libraryVersion
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"

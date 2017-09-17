@@ -22,10 +22,10 @@ and one of the following lines depending to your Gradle Android plugin version i
 `dependencies` section:
 
     // For plugin version < 3.x
-    compile 'com.alexfacciorusso:daggerviewmodel:0.1.1'
+    compile 'com.alexfacciorusso:daggerviewmodel:0.1.2'
     
     // For plugin version >= 3.x
-    implementation 'com.alexfacciorusso:daggerviewmodel:0.1.1'
+    implementation 'com.alexfacciorusso:daggerviewmodel:0.1.2'
 
 ## Usage
 
