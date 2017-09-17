@@ -15,7 +15,7 @@ ext {
     siteUrl = 'https://github.com/alexfacciorusso/DaggerViewModel'
     gitUrl = 'https://github.com/alexfacciorusso/DaggerViewModel.git'
 
-    libraryVersion = '0.1.0'
+    libraryVersion = '0.1.1'
 
     developerId = 'alexfacciorusso'
     developerName = 'Alex Facciorusso'
