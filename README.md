@@ -1,7 +1,7 @@
 # DaggerViewModel
 
 An integration Module for injecting Google Architecture Components' [ViewModel][viewmodel] into
-[Dagger2][dagger2]-injected Android activities.
+[Dagger2][dagger2]-injected Android activities and fragments.
 
 This library was inspired by the official [GithubBrowserSample][GithubBrowserSample] example.
 
