@@ -45,7 +45,9 @@ For example:
      }
  
 Add the `DaggerViewModelModule` to your Application Component
-    
+
+#### Kotlin
+
     @Singleton
     @Component(modules = arrayOf(AndroidSupportInjectionModule::class, DaggerViewModelInjectionModule::class,
             your other modules...))
@@ -53,7 +55,7 @@ Add the `DaggerViewModelModule` to your Application Component
         // your component definitions ...
     }
 
-in Kotlin, or in Java:
+#### Java
         
     @Singleton
     @Component(modules = {AndroidSupportInjectionModule.class, DaggerViewModelInjectionModule.class, 
@@ -65,7 +67,7 @@ in Kotlin, or in Java:
 And finally you can `@Inject` a `ViewModelProvider.Factory` into your Activity/Fragment and use it
 to create your ViewModel.
  
-Kotlin example:
+#### Kotlin
     
     class MainActivity : AppCompatActivity() {
         @Inject
@@ -86,7 +88,7 @@ Kotlin example:
         // ...
     }
     
-or in Java:
+#### Java
 
     public class MainActivity extends AppCompatActivity {
         @Inject
@@ -110,7 +112,7 @@ or in Java:
 
 ## License
 
-Copyright 2013 Alex Facciorusso.
+Copyright 2017 Alex Facciorusso.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
