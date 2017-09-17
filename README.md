@@ -1,3 +1,5 @@
+ [ ![Download](https://api.bintray.com/packages/alexfacciorusso/DaggerViewModel/daggerviewmodel/images/download.svg) ](https://bintray.com/alexfacciorusso/DaggerViewModel/daggerviewmodel/_latestVersion)
+
 # DaggerViewModel
 
 An integration Module for injecting Google Architecture Components' [ViewModel][viewmodel] into
@@ -5,11 +7,31 @@ An integration Module for injecting Google Architecture Components' [ViewModel][
 
 This library was inspired by the official [GithubBrowserSample][GithubBrowserSample] example.
 
+## Installation
+
+Add the following lines to the build.gradle of your app module to add the repository (pending
+request for jCenter repository):
+
+    repositories {
+        maven {
+            url  "https://dl.bintray.com/alexfacciorusso/DaggerViewModel" 
+        }
+    }
+    
+and one of the following lines depending to your Gradle Android plugin version in your
+`dependencies` section:
+
+    // For plugin version < 3.x
+    compile 'com.alexfacciorusso:daggerviewmodel:0.1.1'
+    
+    // For plugin version >= 3.x
+    implementation 'com.alexfacciorusso:daggerviewmodel:0.1.1'
+
 ## Usage
 
 Install the library, then bind your `ViewModel`s into an abstract `@Module`-annotated class 
-annotating your binding method with `@IntoMap` and `@ViewModelKey`, and giving to this
-last annotation your custom `ViewModel` class as parameter.
+annotating your binding method with `@IntoMap` and `@ViewModelKey`, giving to the latter
+annotation your custom `ViewModel` class as parameter.
 For example:
 
      @Module
