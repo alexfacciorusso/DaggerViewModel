@@ -1,6 +1,6 @@
 package com.alexfacciorusso.daggerviewmodel.sample.di
 
-import com.alexfacciorusso.daggerviewmodel.DaggerViewModelModule
+import com.alexfacciorusso.daggerviewmodel.DaggerViewModelInjectionModule
 import com.alexfacciorusso.daggerviewmodel.sample.SampleApplication
 import dagger.BindsInstance
 import dagger.Component
@@ -11,7 +11,7 @@ import javax.inject.Singleton
  * @author alexfacciorusso
  */
 @Singleton
-@Component(modules = arrayOf(AndroidSupportInjectionModule::class, DaggerViewModelModule::class,
+@Component(modules = arrayOf(AndroidSupportInjectionModule::class, DaggerViewModelInjectionModule::class,
         MainModule::class))
 interface ApplicationComponent {
     @Component.Builder

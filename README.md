@@ -25,7 +25,7 @@ For example:
 Add the `DaggerViewModelModule` to your Application Component
     
     @Singleton
-    @Component(modules = arrayOf(AndroidSupportInjectionModule::class, DaggerViewModelModule::class,
+    @Component(modules = arrayOf(AndroidSupportInjectionModule::class, DaggerViewModelInjectionModule::class,
             your other modules...))
     interface ApplicationComponent {
         // your component definitions ...
@@ -34,7 +34,7 @@ Add the `DaggerViewModelModule` to your Application Component
 in Kotlin, or in Java:
         
     @Singleton
-    @Component(modules = {AndroidSupportInjectionModule.class, DaggerViewModelModule.class, 
+    @Component(modules = {AndroidSupportInjectionModule.class, DaggerViewModelInjectionModule.class, 
         your other modules...})
     public interface ApplicationComponent {
         // your component definitions ...
