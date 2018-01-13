@@ -35,7 +35,7 @@ For example:
          // other binds...
      }
  
-Add the `DaggerViewModelModule` to your Application Component
+Add the `DaggerViewModelModule` and the module containing your `ViewModel`s (in our example `ViewModelModule`) to your Application Component:
 
 #### Kotlin
 
