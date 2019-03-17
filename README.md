@@ -9,20 +9,16 @@ This library was inspired by the official [GithubBrowserSample][GithubBrowserSam
 
 ## Installation
 
-Add one of the following lines depending to your Gradle Android plugin version in your
-`dependencies` section:
+Add one of the following lines in the `dependencies` section of your Android `build.gradle` file:
 
-    // For plugin version < 3.x
-    compile 'com.alexfacciorusso:daggerviewmodel:0.1.2'
-    
-    // For plugin version >= 3.x
-    implementation 'com.alexfacciorusso:daggerviewmodel:0.1.2'
+    implementation 'com.alexfacciorusso:daggerviewmodel:0.1.3'
 
 ## Usage
 
-Install the library, then bind your `ViewModel`s into an abstract `@Module`-annotated class 
-annotating your binding method with `@IntoMap` and `@ViewModelKey`, giving to the latter
-annotation your custom `ViewModel` class as parameter.
+Install the library, then bind your `ViewModel` into an abstract `@Module` class,
+annotating your binding method with `@IntoMap` and `@ViewModelKey` with your custom `ViewModel`
+class as parameter.
+
 For example:
 
      @Module
@@ -35,7 +31,8 @@ For example:
          // other binds...
      }
  
-Add the `DaggerViewModelModule` and the module containing your `ViewModel`s (in our example `ViewModelModule`) to your Application Component:
+Then add the `DaggerViewModelModule` and the module containing your `ViewModel`s
+(in our example, `ViewModelModule`) to your Application component:
 
 #### Kotlin
 
@@ -55,7 +52,7 @@ Add the `DaggerViewModelModule` and the module containing your `ViewModel`s (in 
         // your component definitions ...
     }
     
-And finally you can `@Inject` a `ViewModelProvider.Factory` into your Activity/Fragment and use it
+And finally `@Inject` a `ViewModelProvider.Factory` into your Activity/Fragment and use it
 to create your ViewModel.
  
 #### Kotlin
@@ -103,7 +100,7 @@ to create your ViewModel.
 
 ## License
 
-Copyright 2017 Alex Facciorusso.
+Copyright 2017-2019 Alex Facciorusso.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
