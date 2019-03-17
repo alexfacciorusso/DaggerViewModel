@@ -15,7 +15,7 @@ ext {
     siteUrl = 'https://github.com/alexfacciorusso/DaggerViewModel'
     gitUrl = 'https://github.com/alexfacciorusso/DaggerViewModel.git'
 
-    libraryVersion = '0.1.2'
+    libraryVersion = '0.2.0'
 
     developerId = 'alexfacciorusso'
     developerName = 'Alex Facciorusso'
@@ -27,16 +27,15 @@ ext {
 }
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode 3
         versionName libraryVersion
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
     }
 
@@ -54,12 +53,12 @@ dependencies {
     api "com.google.dagger:dagger:$dagger_version"
     kapt "com.google.dagger:dagger-compiler:$dagger_version"
 
-    api "android.arch.lifecycle:runtime:$lifecycle_version"
-    implementation "android.arch.lifecycle:extensions:$arch_version"
-    kapt "android.arch.lifecycle:compiler:$arch_version"
+    api "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-extensions:$arch_version"
+    kapt "androidx.lifecycle:lifecycle-compiler:$arch_version"
 
     testImplementation "junit:junit:$junit_version"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
 }
 repositories {
