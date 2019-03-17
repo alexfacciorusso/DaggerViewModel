@@ -11,7 +11,7 @@ This library was inspired by the official [GithubBrowserSample][GithubBrowserSam
 
 Add one of the following lines in the `dependencies` section of your Android `build.gradle` file:
 
-    implementation 'com.alexfacciorusso:daggerviewmodel:0.1.3'
+    implementation 'com.alexfacciorusso:daggerviewmodel:0.2.0'
 
 ## Usage
 
