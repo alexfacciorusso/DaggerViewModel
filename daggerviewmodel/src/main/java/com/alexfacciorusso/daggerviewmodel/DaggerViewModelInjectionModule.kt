@@ -1,6 +1,6 @@
 package com.alexfacciorusso.daggerviewmodel
 
-import android.arch.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProvider
 import dagger.Binds
 import dagger.Module
 

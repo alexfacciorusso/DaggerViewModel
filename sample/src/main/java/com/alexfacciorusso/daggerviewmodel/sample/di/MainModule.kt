@@ -1,6 +1,6 @@
 package com.alexfacciorusso.daggerviewmodel.sample.di
 
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.ViewModel
 import com.alexfacciorusso.daggerviewmodel.ViewModelKey
 import com.alexfacciorusso.daggerviewmodel.sample.MainActivity
 import com.alexfacciorusso.daggerviewmodel.sample.MainViewModel
